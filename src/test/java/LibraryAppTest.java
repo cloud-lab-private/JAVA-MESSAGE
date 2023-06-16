@@ -218,24 +218,7 @@ public class LibraryAppTest {
     /**
      * When getAllAvailableBooks is called, all books in the database with copies_available over 0 should be returned.
      */
-    @Test
-    public void setBookService_getAllAvailableBooksTest(){
-        List<Book> bookList = new ArrayList<>();
-        List<Book> bookListOverZero = new ArrayList<>();
-        Book b1 = new Book(101, 1, "Ulysses", 2);
-        Book b2 = new Book(102, 1, "Finnegan's Wake", 0);
-        Book b3 = new Book(103, 2, "War and Peace", 1);
-        bookList.add(b1);
-        bookList.add(b2);
-        bookList.add(b3);
-        bookListOverZero.add(b1);
-        bookListOverZero.add(b3);
-        Mockito.when(mockBookDAO.getAllBooks()).thenReturn(bookList);
-        Mockito.when(mockBookDAO.getBooksWithBookCountOverZero()).thenReturn(bookListOverZero);
-        List<Book> returnedBooks = bookService.getAllAvailableBooks();
-        Assert.assertEquals(true, true);
-        
-    }
+
 
     @Test
     public void setBookService_getAllAvailableBooksTest(){
