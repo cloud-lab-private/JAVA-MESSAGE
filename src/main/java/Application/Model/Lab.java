@@ -1,3 +1,4 @@
+package Application.Model;
 public class Lab {
     /**
      * TODO: Change this method so that it returns "Hello, world!"
