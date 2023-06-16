@@ -11,6 +11,7 @@ import Application.DAO.AuthorDAO;
 import Application.DAO.BookDAO;
 import Application.Model.Author;
 import Application.Model.Book;
+import Application.Model.Lab;
 import Application.Service.AuthorService;
 import Application.Service.BookService;
 
